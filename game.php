@@ -13,9 +13,6 @@
     // Include file with database connection
     require_once "includes/config.php";
 
-    // Define highscore variable and initialize with empty value
-    // $highscore = 0;
-
     // Checks if the page was accessed through method post, which is triggered when submitting the form
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
@@ -79,10 +76,6 @@
 
                 <h3>
                 <input type="submit" name="button" value="Start again">
-                
-                <!-- <a href="#" onClick="window.location.reload()">
-                    Start again
-                </a> -->
                 </h3>
 
             </form>

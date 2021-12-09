@@ -10,8 +10,6 @@ session_start();
 <h1>Doggy Dash</h1>
 <h2>Top 10 highscores</h2>
 
-<!-- SELECT username, highscore, dateOfHS FROM users ORDER BY highscore DESC LIMIT 5 -->
-
 <?php
     require_once 'includes/config.php';
     
@@ -41,10 +39,6 @@ session_start();
             echo '</tr>';
         }
     }
-    // else
-    // {
-    //     echo 'No highscores';
-    // }
 
     echo '</table>';
 ?>
