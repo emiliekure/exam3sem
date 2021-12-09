@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+html, body, span, applet, object, iframe,
+h1, h2, #modal #popup form h2 #score, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, label, #forms #login form input, #forms #login form textarea, #forms #signup form input, #forms #signup form textarea, #forms #contact form input, #forms #contact form textarea, legend,
+table, caption, tbody, tfoot, thead, tr, th, table td, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: #b0e996;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  background-color: #0e7030;
+  padding: 12px;
+}
+
+nav #header {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+nav #header p {
+  font-weight: 700;
+  color: #b0e996;
+  padding: 12px;
+}
+
+nav #header p #user {
+  font-weight: 700;
+  color: white;
+}
+
+nav #header #menu {
+  list-style: none;
+  padding: 12px;
+}
+
+nav #header #menu li {
+  display: inline;
+}
+
+nav #header #menu li .active {
+  color: white;
+}
+
+nav #header #menu li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #b0e996;
+  padding: 12px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 48px;
+  text-align: center;
+  font-weight: 700;
+}
+
+h2, #modal #popup form h2 #score {
+  font-size: 24px;
+  margin: 24px auto;
+  text-align: center;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+canvas {
+  margin: 24px auto 48px auto;
+  display: block;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal #popup {
+  background-color: #b0e996;
+  margin: auto;
+  width: 800px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#modal #popup form h2 #score {
+  width: 40px;
+  background-color: #b0e996;
+}
+
+#modal #popup form h3 {
+  margin-bottom: 48px;
+}
+
+#modal #popup form h3 input[type=submit], #modal #popup #forms #login form h3 textarea[type=submit], #forms #login #modal #popup form h3 textarea[type=submit], #modal #popup #forms #signup form h3 textarea[type=submit], #forms #signup #modal #popup form h3 textarea[type=submit], #modal #popup #forms #contact form h3 textarea[type=submit], #forms #contact #modal #popup form h3 textarea[type=submit] {
+  font-weight: 700;
+  margin: 36px auto 0 auto;
+  font-size: 16px;
+  background-color: #b0e996;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  -webkit-box-shadow: 0 4px 12px 0 #09471F;
+          box-shadow: 0 4px 12px 0 #09471F;
+  cursor: pointer;
+  width: 160px;
+  background-color: #0e7030;
+  color: white;
+  margin: 0 auto;
+}
+
+#modal #popup form h3 a {
+  text-decoration: none;
+  color: #0e7030;
+  font-weight: 700;
+}
+
+#forms {
+  border-radius: 24px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0e7030;
+  padding: 48px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  margin: 0 auto 48px auto;
+}
+
+#forms #login, #forms #signup, #forms #contact {
+  width: 400px;
+}
+
+#forms #login form, #forms #signup form, #forms #contact form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+#forms #login form h3, #forms #signup form h3, #forms #contact form h3 {
+  margin-bottom: 36px;
+}
+
+#forms #login form .form-fail, #forms #login form .form-ok, #forms #login form .feedback, #forms #signup form .form-fail, #forms #signup form .form-ok, #forms #signup form .feedback, #forms #contact form .form-fail, #forms #contact form .form-ok, #forms #contact form .feedback {
+  text-align: center;
+  color: #cd0022;
+  background-color: #feeaed;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+#forms #login form .form-ok, #forms #signup form .form-ok, #forms #contact form .form-ok {
+  color: #0e7030;
+  background-color: #b0e996;
+}
+
+#forms #login form label, #forms #login form input, #forms #login form textarea, #forms #signup form label, #forms #signup form input, #forms #signup form textarea, #forms #contact form label, #forms #contact form input, #forms #contact form textarea {
+  display: block;
+  margin: 16px auto 8px auto;
+  font-size: 16px;
+  width: 320px;
+}
+
+#forms #login form .required::after, #forms #signup form .required::after, #forms #contact form .required::after {
+  content: " *";
+  font-weight: 700;
+  color: #ff193f;
+}
+
+#forms #login form input, #forms #login form textarea, #forms #signup form input, #forms #signup form textarea, #forms #contact form input, #forms #contact form textarea {
+  border: none;
+  border-radius: 8px;
+  margin-top: 0;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#forms #login form input[type=submit], #forms #login form textarea[type=submit], #forms #signup form input[type=submit], #forms #signup form textarea[type=submit], #forms #contact form input[type=submit], #forms #contact form textarea[type=submit] {
+  font-weight: 700;
+  margin: 36px auto 0 auto;
+  font-size: 16px;
+  background-color: #b0e996;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  -webkit-box-shadow: 0 4px 12px 0 #09471F;
+          box-shadow: 0 4px 12px 0 #09471F;
+  cursor: pointer;
+  width: 160px;
+}
+
+#forms #login form input:focus, #forms #login form textarea:focus, #forms #signup form input:focus, #forms #signup form textarea:focus, #forms #contact form input:focus, #forms #contact form textarea:focus {
+  outline: none;
+}
+
+#forms #login form textarea, #forms #signup form textarea, #forms #contact form textarea {
+  resize: none;
+}
+
+#forms #login form .feedback, #forms #signup form .feedback, #forms #contact form .feedback {
+  text-align: left;
+  font-size: 12px;
+}
+
+#forms #login form p, #forms #signup form p, #forms #contact form p {
+  text-align: center;
+  margin-top: 36px;
+  color: #b0e996;
+}
+
+#forms #login form p a, #forms #signup form p a, #forms #contact form p a {
+  text-decoration: none;
+  color: white;
+}
+
+#forms #seperator {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 2px;
+  height: auto;
+}
+
+table {
+  margin: 24px auto 48px auto;
+  border: 2px solid #0e7030;
+}
+
+table th, table td {
+  width: 240px;
+  border: 2px solid #0e7030;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+table td {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+}
+
+table .place {
+  width: 40px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #b0e996;
+  padding: 24px;
+  margin-top: auto;
+  font-weight: 700;
+}
+
+footer #footer-copy {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}

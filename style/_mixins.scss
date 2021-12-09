@@ -1,0 +1,91 @@
+@mixin button {
+    font-weight: $bold;
+    margin: $size*4.5 auto 0 auto;
+    font-size: $size*2;
+    background-color: $lgreen;
+    border: none;
+    border-radius: $size;
+    padding: $size*1.5;
+    box-shadow: 0 $size*0.5 $size*1.5 0 $gshadow;
+    cursor: pointer;
+    width: 160px;
+}
+
+@mixin form {
+    width: 400px;
+
+    form {
+        width: fit-content;
+        margin: auto;
+
+        h3 {
+            margin-bottom: $size*4.5;
+        }
+
+        .form-fail {
+            text-align: center;
+            color: $dred;
+            background-color: $lred;
+            border-radius: $size;
+            padding: $size*1.5;
+        }
+
+        .form-ok {
+            @extend .form-fail;
+            color: $dgreen;
+            background-color: $lgreen;
+        }
+
+        label {
+            display: block;
+            margin: $size*2 auto $size auto;
+            font-size: $size*2;
+            width: 320px;
+        }
+
+        .required::after {
+            content: " *";
+            font-weight: $bold;
+            color: $mred;
+        }
+
+        input {
+            @extend label;
+            border: none;
+            border-radius: $size;
+            margin-top: 0;
+            padding: $size;
+            font-size: $size*2;
+
+            &[type=submit] {
+                @include button;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            @extend input;
+            resize: none;
+        }
+
+        .feedback {
+            @extend .form-fail;
+            text-align: left;
+            font-size: $size*1.5;
+        }
+
+        p {
+            text-align: center;
+            margin-top: $size*4.5;
+            color: $lgreen;
+        
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
